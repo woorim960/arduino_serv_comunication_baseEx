@@ -1,3 +1,6 @@
+/* public/css/led/management.css */
+
+/* 바디 */
 body {
   display: flex;
   flex-direction: column;
@@ -9,6 +12,7 @@ body {
   font-size: 8vw;
 }
 
+/* LED 버튼 */
 .led-btn {
   color: rgb(59, 59, 59);
   font-size: 7vw;
@@ -23,6 +27,7 @@ body {
   cursor: pointer;
 }
 
+/* LED 상태 메시지 */
 #status {
   font-size: 4vw;
 }
