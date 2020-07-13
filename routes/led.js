@@ -15,7 +15,9 @@ router.post('/on', (req, res) => {
 
     serialPort.write('1', (err, results) => {
       // LED 켜짐
-    })
+      if (err) throw err;
+      res.json(true);
+    });
   });
 });
 
@@ -24,7 +26,9 @@ router.post('/off', (req, res) => {
 
     serialPort.write('0', (err, results) => {
       // LED 꺼짐
-    })
+      if (err) throw err;
+      res.json(true);
+    });
   });
 });
 
